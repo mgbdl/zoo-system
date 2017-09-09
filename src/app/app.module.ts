@@ -6,14 +6,18 @@ import { AppComponent } from './app.component';
 import { StoreComponent } from './store/store.component';
 import { ParkComponent } from './park/park.component';
 
+import { routing, appRoutingProviders } from './app.routing';
+
 @NgModule({
   declarations: [
     AppComponent,
     StoreComponent,
-    ParkComponent
+    ParkComponent,
+    appRoutingProviders
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

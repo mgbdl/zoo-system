@@ -8,6 +8,7 @@ import { ParkComponent } from './park/park.component';
 import { HomeComponent } from './home/home.component';
 import { AnimalComponent } from './animal/animal.component';
 import { KeeperComponent } from './keeper/keeper.component';
+import { ContactComponent } from './contact/contact.component';
 
 import { routing, appRoutingProviders } from './app.routing';
 

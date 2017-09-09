@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 
 import { StoreComponent } from './store/store.component';
 import { ParkComponent } from './park/park.component';
+import { HomeComponent } from './home/home.component';
+import { AnimalComponent } from './animal/animal.component';
+import { KeeperComponent } from './keeper/keeper.component';
 
 import { routing, appRoutingProviders } from './app.routing';
 

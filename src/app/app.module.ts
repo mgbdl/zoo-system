@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { routing, appRoutingProviders } from './app.routing';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +12,7 @@ import { AnimalComponent } from './animal/animal.component';
 import { KeeperComponent } from './keeper/keeper.component';
 import { ContactComponent } from './contact/contact.component';
 
-import { routing, appRoutingProviders } from './app.routing';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { routing, appRoutingProviders } from './app.routing';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     routing
   ],
   providers: [],

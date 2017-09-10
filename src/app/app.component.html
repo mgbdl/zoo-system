@@ -1,2 +1,9 @@
 <h1>{{title}}</h1>
+
+<a [routerLink]="['/home']">Home</a>
+<a [routerLink]="['/animal']">Animals</a>
+<a [routerLink]="['/keeper']">Keepers</a>
+<a [routerLink]="['/contact']">Contact</a>
+<span *ngIf="user">Wellcome <strong>{{user}}</strong></span>
+<hr>
 <router-outlet></router-outlet>

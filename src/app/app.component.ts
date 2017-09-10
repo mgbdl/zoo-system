@@ -10,11 +10,17 @@ export class AppComponent implements OnInit, DoCheck{
   public user: string;
 
   ngOnInit() {
-    this.user = localStorage.getItem('contactEmail');
+    this.user = localStorage.getItem('contactEmail') || null;
   }
 
   ngDoCheck() {
     this.user = localStorage.getItem('contactEmail');
+  }
+
+  deleteEmail() {
+    localStorage.removeItem('contactEmail');
+    localStorage.clear();
+    this.user = null;
   }
 
 }

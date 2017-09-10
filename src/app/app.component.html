@@ -4,6 +4,10 @@
 <a [routerLink]="['/animal']">Animals</a>
 <a [routerLink]="['/keeper']">Keepers</a>
 <a [routerLink]="['/contact']">Contact</a>
-<span *ngIf="user">Wellcome <strong>{{user}}</strong></span>
+<span *ngIf="user">
+  Wellcome <strong>{{user}}</strong>
+  <button (click)="deleteEmail()">Archive User</button>
+</span>
+
 <hr>
 <router-outlet></router-outlet>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'contact',
@@ -6,7 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 
-export class ContactComponent {
+export class ContactComponent implements OnInit{
+
+  public contactEmail: string;
+
   constructor() { }
+
+  ngOnInit() {
+    console.log('contact.component cargado!');
+  }
+
+  handleMail(){
+    localStorage.setItem('contactEmail', this.contactEmail);
+  }
 
 }

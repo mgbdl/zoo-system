@@ -17,6 +17,10 @@ import { routing, appRoutingProviders } from './app.routing';
     AppComponent,
     StoreComponent,
     ParkComponent,
+    HomeComponent,
+    AnimalComponent,
+    KeeperComponent,
+    ContactComponent,
     appRoutingProviders
   ],
   imports: [
